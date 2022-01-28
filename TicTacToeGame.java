@@ -8,8 +8,8 @@ public class TicTacToeGame{
 
 		System.out.println("Welcome to TicTacToe game!!! ");
 		System.out.println(" ");
-		
-			createBoard();
+		createBoard();
+		chooseXorO();
 	}
 	public static void createBoard() {
 
@@ -17,6 +17,20 @@ public class TicTacToeGame{
 		for(int i=1;i<10;i++) {
 			tic[i]=' ';
 		}
-		
+
+	}
+	public static String chooseXorO() {
+
+		Scanner sc = new Scanner(System.in);
+		char player , computer;
+		System.out.print("Input letter X or O for player : ");
+		player = sc.next().charAt(0);
+		if(player == 'X' || player == 'x')
+			computer = 'O';
+		else if(player == 'O' || player == 'o')
+			computer = 'X';
+		else
+			System.out.println("Invalid inputs");
+		return null;
 	}
 }
