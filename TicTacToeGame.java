@@ -7,6 +7,8 @@ public class TicTacToeGame{
 	public static void main(String[] args) {
 
 		System.out.print("Welcome to TicTacToe game !!! ");
+		System.out.print("TicTacToegame begin !!! ");
+
 
 			game();
 	}
